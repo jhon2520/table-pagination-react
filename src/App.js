@@ -8,7 +8,7 @@ const App = () => {
 
     const [paginated,pages,pagination,currentPage] = useTable(data)
 
-    console.log(data.length);
+    //console.log(data.length);
 
     return (
         <div>

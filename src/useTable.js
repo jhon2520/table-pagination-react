@@ -5,8 +5,15 @@ const pageSize = 10;
 
 const useTable = (data) => {
     
+    // paginated: para mapear la que se va a mapear
+    // pages :  para mapear el navbar de la paginacion
+    //pagination: metodo en el onclik de la paginacion
+    //currentPage: valor de cada li
+
+
     const [paginated, setPaginated] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
+
 
     useEffect(()=>{
         setPaginated(_(data).slice(0).take(pageSize).value())
